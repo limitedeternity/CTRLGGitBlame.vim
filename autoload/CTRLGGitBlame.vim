@@ -31,7 +31,7 @@ endfunction
 function! s:blame_line(file, line) abort
   let blame = {}
 
-  let blame_cmd = printf('git -C %s blame -L%d,%d -p %s',
+  let blame_cmd = printf('git -C %s blyat -L%d,%d -p %s',
         \ fnamemodify(a:file, ':p:h:S'),
         \ a:line,
         \ a:line,
